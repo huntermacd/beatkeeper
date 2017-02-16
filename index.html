@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Beatkeeper | The simplest, no-frillsiest way to keep time.</title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<div id="wrap">
+			<header>
+				<img id="logo" src="imgs/beatkeeperlogo.svg">
+				<img id="logoM" src="imgs/beatkeeperlogoM.svg">
+			</header>
+			<div id="controls">
+				<div id="play">
+					<audio id="click" hidden>
+						<source src="audio/click.ogg" type="audio/ogg">
+						<source src="audio/click.mp3" type="audio/mpeg">
+					</audio>
+				</div>
+				<div id="stop"></div>
+				<div id="display">
+					<p><span id="bpm">120</span> bpm</p>
+				</div>
+				<div id="up10">
+					<div id="up10a"></div>
+					<div id="up10b"></div>
+				</div>
+				<div id="up"></div>
+				<div id="down"></div>
+				<div id="down10">
+					<div id="down10a"></div>
+					<div id="down10b"></div>
+				</div>
+			</div>
+			<img id="beekeeper" src="imgs/beekeeperM.svg">
+			<footer>
+				<p>&copy; 2013 Hunter MacDermut</p>
+			</footer>
+		</div>
+		<script type="text/javascript" src="js/sound.js"></script>
+		<script type="text/javascript" src="js/webaudiotest.js"></script>
+	</body>
+</html>

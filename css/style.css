@@ -1,0 +1,226 @@
+html {
+	background-image: url(../imgs/beatkeeperbg.svg);
+	color: #fff;
+	font-size: 2.5em;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+html, body {
+	height: 100%;
+}
+
+#wrap {
+	position: relative;
+	margin: 0 auto;
+	width: 768px;
+	height: 100%;
+	background: url(../imgs/beekeeper.svg) no-repeat center top fixed;
+}
+
+header img {
+	display: block;
+	margin: 0 auto;
+	padding-top: 5px;
+}
+
+#logoM,
+#beekeeper {
+	display: none;
+}
+
+#controls,
+#play,
+#stop,
+#display,
+#up10a,
+#up10b,
+#up,
+#down10a,
+#down10b,
+#down,
+footer {
+	position: absolute;
+}
+
+#controls {
+	top: 425px;
+	left: 213px;
+	width: 330px;
+	height: 180px;
+	background: url(../imgs/beatkeepercontrols.svg);
+}
+
+#play,
+#stop,
+#up,
+#up10,
+#down,
+#down10 {
+	cursor: pointer;
+}
+
+#play,
+#up,
+#up10a,
+#up10b,
+#down,
+#down10a,
+#down10b {
+	width: 0;
+	height: 0;
+}
+
+#play {
+	top: 45px;
+	left: 22px;
+	border-top: 15px solid transparent;
+	border-left: 30px solid #BF862D;
+	border-bottom: 15px solid transparent;
+}
+
+#stop {
+	top: 107px;
+	left: 21px;
+	width: 28px;
+	height: 28px;
+	background: #BF862D;
+}
+
+#display {
+	top: 27px;
+	left: 85px;
+}
+
+#up10a,
+#up10b {
+	left: 234px;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 20px solid #BF862D;
+}
+
+#up10a {
+	top: 9px;
+}
+
+#up10b {
+	top: 26px;
+}
+
+#up {
+	top: 43px;
+	left: 281px;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 30px solid #BF862D;
+}
+
+#down {
+	top: 108px;
+	left: 281px;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-top: 30px solid #BF862D;
+}
+
+#down10a,
+#down10b {
+	left: 234px;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 20px solid #BF862D;
+}
+
+#down10a {
+	top: 135px;
+}
+
+#down10b {
+	top: 152px;
+}
+
+footer {
+	font-size: .25em;
+	color: #402D0F;
+	top: 620px;
+	left: 200px;
+}
+
+@media screen and (max-width: 768px) {
+
+	#wrap {
+		width: 320px;
+		background: none;
+	}
+
+	#logoM {
+		display: block;
+	}
+
+	#logo {
+		display: none;
+	}
+
+	#controls {
+		top: 60px;
+		left: 0;
+		width: 100%;
+		height: 175px;
+		background: url(../imgs/beatkeepercontrolsM.svg);
+	}
+
+	#play {
+	top: 43px;
+	left: 20px;
+	}
+
+	#stop {
+		top: 103px;
+		left: 20px;
+	}
+
+	#display {
+		top: 24px;
+		left: 80px;
+	}
+
+	#up10a,
+	#up10b,
+	#down10a,
+	#down10b {
+		left: 226px;
+	}
+
+	#down10a {
+		top: 129px;
+	}
+
+	#down10b {
+		top: 146px;
+	}
+
+	#up {
+		top: 42px;
+		left: 272px;
+	}
+
+	#down {
+		top: 102px;
+		left: 272px;
+	}
+
+	#beekeeper {
+		position: absolute;
+		display: block;
+		top: 235px;
+		left: 75px;
+	}
+
+	footer {
+		top: 625px;
+		left: 100px;
+	}
+
+}
