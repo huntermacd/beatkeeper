@@ -14,8 +14,8 @@
         <img id="logoM" src="imgs/beatkeeperlogoM.svg">
       </header>
       <div id="controls">
-        <div id="play" onclick="amp.gain.value = 1"></div>
-        <div id="stop" onclick="amp.gain.value = 0"></div>
+        <div id="play" onclick="scheduler()"></div>
+        <div id="stop" onclick="window.clearTimeout(timer)"></div>
         <div id="display">
           <p><span id="bpm">120</span> bpm</p>
         </div>

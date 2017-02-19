@@ -5,7 +5,8 @@ var tempo = 120;
 var tempoDisplay = document.getElementById("bpm");
 var subdivision = 4;
 var amp = ctx.createGain();
-amp.gain.value = 0;
+var timer;
+amp.gain.value = 1;
 
 function play(time) {
   var osc = ctx.createOscillator();
@@ -22,7 +23,7 @@ function scheduler() {
     next += 0.25 * gap;
     play(next);
   }
-  window.setTimeout(scheduler, 50.0);
+  timer = window.setTimeout(scheduler, 50.0);
 }
 
 function increment(){
@@ -57,4 +58,4 @@ function decrement10(){
   tempoDisplay.innerHTML = tempo;
 }
 
-scheduler();
+// scheduler();
